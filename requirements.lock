@@ -10,11 +10,27 @@
 #   universal: false
 
 -e file:.
+altgraph==0.17.4
+    # via pyinstaller
+packaging==24.2
+    # via pyinstaller
+    # via pyinstaller-hooks-contrib
+pefile==2023.2.7
+    # via pyinstaller
+pyinstaller==6.11.1
+    # via yt-dlp-gui
+pyinstaller-hooks-contrib==2024.10
+    # via pyinstaller
 pyqt6==6.7.1
     # via yt-dlp-gui
 pyqt6-qt6==6.7.3
     # via pyqt6
 pyqt6-sip==13.8.0
     # via pyqt6
+pywin32-ctypes==0.2.3
+    # via pyinstaller
+setuptools==75.6.0
+    # via pyinstaller
+    # via pyinstaller-hooks-contrib
 yt-dlp==2024.11.18
     # via yt-dlp-gui
