@@ -16,42 +16,67 @@ A modern and user-friendly graphical interface for yt-dlp, designed to make down
 
 ## Installation
 
-### Prerequisites
+### Option 1: Download Executable (Recommended)
+
+1. Go to the [Releases](https://github.com/posky/yt-dlp-gui/releases) page
+2. Download the latest `yt-dlp-gui.exe` file
+3. Run the executable - no installation required!
+
+### Option 2: From Source
+
+#### Prerequisites
 
 - Python 3.8 or higher
-- pip (Python package installer)
+- [Rye](https://rye-up.com/) (Python package manager)
 
-### Steps
+#### Steps
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/yt-dlp-gui.git
+git clone https://github.com/posky/yt-dlp-gui.git
 cd yt-dlp-gui
 ```
 
-2. Install the required dependencies:
+2. Install dependencies using Rye:
 ```bash
-pip install -r requirements.lock
+rye sync
 ```
 
 ## Usage
 
-1. Run the application:
-```bash
-python -m yt_dlp_gui.main
-```
-
+### Using the Executable
+1. Run `yt-dlp-gui.exe`
 2. Enter a YouTube URL in the input field
 3. (Optional) Change the download location using the folder button
 4. Click the download button to start downloading
 5. Monitor the progress through the progress bar
 
+### Running from Source
+1. Activate the environment and run the application:
+```bash
+rye run python -m yt_dlp_gui.main
+```
+
+2. Follow the same steps as above for downloading videos
+
 ## Development
 
-For development, install additional dependencies:
+For development:
 
+1. Clone the repository:
 ```bash
-pip install -r requirements-dev.lock
+git clone https://github.com/posky/yt-dlp-gui.git
+cd yt-dlp-gui
+```
+
+2. Set up the development environment:
+```bash
+rye sync
+```
+
+3. Make your changes and test them:
+```bash
+rye run python -m yt_dlp_gui.main
 ```
 
 ## License
