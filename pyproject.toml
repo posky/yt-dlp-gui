@@ -1,0 +1,27 @@
+[project]
+name = "yt-dlp-gui"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "posky", email = "pjm5810@gmail.com" }
+]
+dependencies = [
+    "PyQt6>=6.6.1",
+    "yt-dlp>=2024.3.10"
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/yt_dlp_gui"]
